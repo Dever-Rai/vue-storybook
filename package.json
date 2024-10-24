@@ -11,12 +11,23 @@
 		"preview": "vite preview --host",
 		"lint": "npm run lint:format & npm run lint:fix",
 		"lint:fix": "eslint --fix  \"./src/**/*.{ts,vue,js}\"",
-		"lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,vue,css,md,json}\" "
+		"lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,vue,css,md,json}\" ",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"vue": "^3.5.10"
 	},
 	"devDependencies": {
+		"@chromatic-com/storybook": "^1.9.0",
+		"@storybook/addon-essentials": "^8.3.6",
+		"@storybook/addon-interactions": "^8.3.6",
+		"@storybook/addon-links": "^8.3.6",
+		"@storybook/addon-onboarding": "^8.3.6",
+		"@storybook/blocks": "^8.3.6",
+		"@storybook/test": "^8.3.6",
+		"@storybook/vue3": "^8.3.6",
+		"@storybook/vue3-vite": "^8.3.6",
 		"@typescript-eslint/eslint-plugin": "^8.9.0",
 		"@vitejs/plugin-vue": "^5.1.4",
 		"eslint": "^8.57.0",
@@ -26,7 +37,10 @@
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-promise": "^7.1.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"eslint-plugin-storybook": "^0.10.1",
 		"eslint-plugin-vue": "^9.29.0",
+		"sass": "^1.80.4",
+		"storybook": "^8.3.6",
 		"typescript": "^5.2.2",
 		"vite": "^5.4.8",
 		"vue-tsc": "^2.1.6"
